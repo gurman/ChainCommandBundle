@@ -1,0 +1,28 @@
+{
+  "name": "gurman/chain-command-bundle",
+  "description": "Symfony bundle with simple command chaining functionality.",
+  "type": "symfony-bundle",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Viktor Holovko",
+      "email": "viktor.gurman@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "symfony/framework-bundle": "5.4.*",
+    "symfony/console": "5.4.*",
+    "symfony/yaml": "^6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gurman\\ChainCommandBundle\\": ""
+    }
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "5.4.*"
+  }
+}

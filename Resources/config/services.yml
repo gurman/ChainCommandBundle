@@ -1,0 +1,10 @@
+services:
+  command.manager:
+    public: true
+    class: Gurman\ChainCommandBundle\Manager\CommandsManager
+
+  command.subscriber:
+    class: Gurman\ChainCommandBundle\EventSubscriber\CommandsSubscriber
+    arguments: [ '@logger', '@command.manager' ]
+    tags:
+      - { name: kernel.event_subscriber, event: console.command }
